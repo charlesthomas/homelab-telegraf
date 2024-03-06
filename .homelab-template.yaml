@@ -1,0 +1,24 @@
+_commit: v1.6.12-11-g8d8c932
+_src_path: /home/crthomas/code/charlesthomas/homelab-template
+additionalResources: ''
+backups: false
+helm: true
+helmCrds: false
+helmName: telegraf-ds
+helmRelease: telegraf
+helmRepo: https://helm.influxdata.com/
+helmValues: helm/values.yaml
+helmVersion: ''
+ingress: false
+labels: ''
+name: telegraf
+namespace: telegraf
+pvc: false
+reloader: true
+resources:
+- external-secrets.yaml
+- rbac.yaml
+service: false
+serviceAccount: false
+upstreamURL: https://www.influxdata.com/time-series-platform/telegraf/
+url: https://github.com/charlesthomas/homelab-telegraf

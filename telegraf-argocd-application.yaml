@@ -1,0 +1,21 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: telegraf
+  namespace: argocd # MUST be argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    path: .
+    repoURL: https://github.com/charlesthomas/homelab-telegraf
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: telegraf
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
