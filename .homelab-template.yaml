@@ -1,4 +1,4 @@
-_commit: v1.6.12-11-g8d8c932
+_commit: v1.8.1
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
@@ -9,6 +9,9 @@ helmRelease: telegraf
 helmRepo: https://helm.influxdata.com/
 helmValues: helm/values.yaml
 helmVersion: ''
+homepageEnabled: true
+ingHost: telegraf.crt.house
+ingName: telegraf
 ingress: false
 labels: ''
 name: telegraf

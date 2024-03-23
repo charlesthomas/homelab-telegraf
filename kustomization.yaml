@@ -11,6 +11,22 @@ resources:
 - resources/namespaces.yaml
 - resources/rbac.yaml
 patches:
+- patch: |-
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      name: telegraf
+      namespace: telegraf
+      annotations:
+        gethomepage.dev/href: https://telegraf.crt.house
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/description: 
+        gethomepage.dev/group: 
+        gethomepage.dev/icon: telegraf
+        gethomepage.dev/name: telegraf
+        gethomepage.dev/pod-selector: ""
+  target:
+    kind: Ingress
 helmCharts:
 - name: telegraf-ds
   namespace: telegraf
