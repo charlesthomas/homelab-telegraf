@@ -115,8 +115,10 @@ rules:
       - ecrauthorizationtokens
       - fakes
       - gcraccesstokens
+      - githubaccesstokens
       - passwords
       - vaultdynamicsecrets
+      - webhooks
     verbs:
       - get
       - watch
