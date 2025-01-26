@@ -8,7 +8,7 @@ helmName: telegraf-ds
 helmRelease: telegraf
 helmRepo: https://helm.influxdata.com/
 helmValues: helm/values.yaml
-helmVersion: ''
+helmVersion: '1.1.35'
 homepageEnabled: false
 ingress: false
 labels: ''

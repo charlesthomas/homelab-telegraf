@@ -17,3 +17,4 @@ helmCharts:
   releaseName: telegraf
   repo: https://helm.influxdata.com/
   valuesFile: helm/values.yaml
+  version: 1.1.35
