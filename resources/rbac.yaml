@@ -116,6 +116,7 @@ rules:
       - ecrauthorizationtokens
       - fakes
       - gcraccesstokens
+      - githubaccesstokens
       - quayaccesstokens
       - passwords
       - vaultdynamicsecrets
