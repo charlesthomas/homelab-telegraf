@@ -10,7 +10,13 @@ resources:
 - resources/external-secrets.yaml
 - resources/namespaces.yaml
 - resources/rbac.yaml
+
+images:
+  - name: telegraf
+    newTag: 1.33.1-alpine
+
 patches:
+
 helmCharts:
 - name: telegraf-ds
   namespace: telegraf

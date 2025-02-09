@@ -121,6 +121,8 @@ rules:
       - passwords
       - vaultdynamicsecrets
       - webhooks
+      - grafanas
+      - generatorstates
     verbs:
       - get
       - watch
