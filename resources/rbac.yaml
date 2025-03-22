@@ -104,6 +104,7 @@ rules:
       - secretstores
       - clustersecretstores
       - pushsecrets
+      - clusterpushsecrets
     verbs:
       - get
       - watch
