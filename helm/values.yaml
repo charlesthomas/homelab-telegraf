@@ -127,9 +127,7 @@ config:
           - aufs
           - squashfs
     - kubernetes:
-        bearer_token: "/hostfs/var/lib/rancher/k3s/server/token"
-        tls_cert: "/hostfs/var/lib/rancher/k3s/server/tls/client-admin.crt"
-        tls_key: "/hostfs/var/lib/rancher/k3s/server/tls/client-admin.key"
+        bearer_token: "/var/run/secrets/kubernetes.io/serviceaccount/token"
     - kube_inventory:
         namespace: ""
   outputs:
